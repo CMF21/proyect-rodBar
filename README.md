@@ -10,3 +10,9 @@
 - Amantes del buen sabor que valoran la tradición en los productos alimenticios.
   
 Nos enfocamos en brindar una experiencia gastronómica excepcional a todos aquellos que aprecian la calidad y el sabor auténtico en cada bocado. ¡Únete a nosotros y descubre el placer de degustar nuestras delicias santiagueñas! 🌟
+
+## Descripción de los integrantes
+- ### Cristian Mauricio Falcon:
+Eestudiante de 21 años de edad, residente en Sgo del Estero. Actualmente está cursando la carrera de Licenciatura en Sistemas de Información. Su interés por el mundo de la programación ha ido en aumento y está decidido a explorar más a fondo este campo, mostrando una actitud positiva y una gran disposición para aprender y crecer profesionalmente.
+
+## Sitios de referencia 
