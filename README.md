@@ -16,3 +16,33 @@ Nos enfocamos en brindar una experiencia gastronómica excepcional a todos aquel
 Eestudiante de 21 años de edad, residente en Sgo del Estero. Actualmente está cursando la carrera de Licenciatura en Sistemas de Información. Su interés por el mundo de la programación ha ido en aumento y está decidido a explorar más a fondo este campo, mostrando una actitud positiva y una gran disposición para aprender y crecer profesionalmente.
 
 ## Sitios de referencia 
+1. [Mcdonalds](https://www.mcdonalds.com.ar/)
+2. [Burgerking](https://www.burgerking.com.ar/)
+3. [Grido](https://argentina.gridohelado.com/)
+4. [Betos](https://betos.com.ar/)
+5. [Hondeños](https://www.xn--hondeos-8za.com.ar/)
+6. [ColladoRotiseria](https://www.rotiseria-collado.com/)
+
+## Logo Original
+
+<p align="center">
+  <img src="./public/img/Logo original.png"/>
+</p>
+
+## Paleta de colores
+
+<p align="center">
+  <img src="./public/img/RodBar paleta de colores.jpg"/>
+</p>
+
+## Tipografía
+
+- ### *Brother - Bold*.
+
+- ### *Inter - Regular, Italic y Bold*.
+
+## Foto de perfil
+
+<p align="center">
+  <img src="./public/img/Foto de perfil.png"/>
+</p>
