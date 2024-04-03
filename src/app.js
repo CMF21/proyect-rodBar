@@ -5,9 +5,12 @@ const app = express();
 // Importa path, que proporciona utilidades para trabajar con rutas de archivos y directorios.
 const path = require('path');
 
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "./views"));
+
 //RUTAS
 app.get('/',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/index.html'))
+    res.render('index.ejs')
 })
 app.get('/login',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/login.html'))
@@ -35,6 +38,6 @@ app.use(express.static(publicPath));
 
 
 //Inicia el servidor Express en el puerto 3001.
-app.listen(3001, () => {
-    console.log("Servidor corriendo en el puerto http://localhost:3001");
+app.listen(3030, () => {
+    console.log("Servidor corriendo en el puerto http://localhost:3030");
 });

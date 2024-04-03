@@ -1,0 +1,43 @@
+<nav class="navbar">
+    <div class="box box1">
+        <a href="/"><img class="logo" src="/img/logoRodBar.png" alt="logo" /></a>
+    </div>
+    <div class="box box2">
+        <ul class="menu">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#contenedor2">Quienes Somos</a></li>
+            <li><a href="/listaProductos">Productos</a></li>
+            <li><a href="#contenedor3">Contacto</a></li>
+            <li><a href="/admProductos">Administrar</a></li>
+        </ul>
+    </div>
+    <div class="box box3">
+        <form action="/buscarProductos" method="GET" class="busqueda">
+            <input type="search" name="search" placeholder="Buscar..." class="busqueda-input" />
+            <button type="submit" class="busqueda-button"></button>
+        </form>
+        <a href="/carritoVacio"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <!-- if(locals.req.session.usuario){ %> -->
+    </div>
+    <!-- <div class="navSesion">
+            <a href="/profile/<= locals.req.session.usuario.id %>" class="datosPerfil">
+                <img src="/img/imgUsers/<= locals.req.session.usuario.imagen %>" alt="imagen del usuario">
+                <p>
+                    <= locals.req.session.usuario.nombre %>
+                </p>
+            </a>
+            <form action="/" method="POST">
+                <input class="cerrar" type="submit" name="cerraSesion" value="Cerrar Sesion">
+            </form>
+        </div> -->
+    <!--   }else{ %> -->
+    <div class="logInSingUp">
+        <a href="/login"> Log In </a>
+        <a href="/register"> Sing Up </a>
+    </div>
+    <!-- } -->
+    <div class="box4">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>

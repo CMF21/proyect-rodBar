@@ -1,0 +1,56 @@
+<%- include("../partials/head1.ejs",{pageTitle: "Login"})%>
+<link rel="stylesheet" href="css/login.css">
+<%- include("../partials/head2.ejs") %>
+
+<body>
+    <header>
+        <%- include("../partials/barraNav.ejs", { req: locals.req }) %>
+    </header>
+    <main>
+        <div class="contenedor1">
+            <div class="contenedor-izquierda">
+                <div class="cuenta">
+                    <h2>INICIAR SESIÓN</h2>
+                </div>
+                <div class="errores">
+                    <% if(typeof(errors) != "undefined"){ %>
+                        <ul class="peligro-error">
+                            <% errors.forEach(error => { %>
+                                <li><%= error.msg %></li>
+                                <% }); %> 
+                        </ul>
+                    <% }; %> 
+                </div>
+                <form class="formulario" action="/login" method="POST">
+                    <div class="barra"><input class="barra2" type="email" id="email" name="email" placeholder="E-mail" value="<%= typeof old != "undefined" ? old.email : "" %>"></div>
+                    <div id="errorEmail" class="error"></div>
+                    <div class="barra"><input class="barra2" type="password" id= "password" name="password" placeholder="Contraseña"></div>
+                    <div id="errorPassword" class="error"></div>
+                    <div class="checkbox"><input class="boxx" type="checkbox" name="recordarme" id = "recordarme">
+                    <label class="recordarme" for="recordarme">Recordarme</label>
+                    </div>
+                    <div class="olvidar"><a class="forget-pass" href="">¿Olvidaste tu contraseña</a></div>
+                    <div class="registro"><input class="boton-registro" type="submit" value="INICIAR SESIÓN"></div>                    
+                </form>
+            </div>
+            <div class="contenedor-derecha">
+                <div class="bienvenido">
+                    <h2>¡BIENVENID@!</h2>
+                </div>
+                <div class="pregunta">
+                    <h2>¿NO TENÉS CUENTA?</h2>
+                </div>
+                <div class="boton-sesion">
+                    <div class="boton-login">
+                        <a href="/register"><input class="boton" type="button" value="REGISTRARME"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <%- include("../partials/footer.ejs") %>
+    <script src="/js/User/ValidatorLogin.js"></script>
+</body>
+
+</html>
